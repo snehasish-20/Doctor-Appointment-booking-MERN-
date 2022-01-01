@@ -6,10 +6,9 @@ const UserAppointmentModel=require("./models/users")
 app.use(express.json())
 var cors = require('cors')
 app.use(cors()) 
-mongoose.connect("mongodb+srv://snehasish:patitikul@docappointment.tts08.mongodb.net/DoctorAppointment?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://kunal:kunal123@docappointment.tibsd.mongodb.net/DoctorAppointment?retryWrites=true&w=majority", {
     useNewUrlParser:true,
 })
-
 app.post('/book', async (req,res)=>{
     const userId=req.body.user
     const doctor=req.body.doctor
